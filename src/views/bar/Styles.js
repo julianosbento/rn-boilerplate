@@ -5,7 +5,7 @@
  *
  */
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../config';
+import { Colors } from '../../utils';
 
 export default StyleSheet.create({
   Content: {

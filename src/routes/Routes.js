@@ -7,7 +7,7 @@
 import { Navigation } from 'react-native-navigation';
 import Navigator from './Navigator';
 import Views from './Views';
-import { Colors } from '../config';
+import { Colors } from '../utils';
 
 Views.register();
 
