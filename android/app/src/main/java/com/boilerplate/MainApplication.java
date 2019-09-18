@@ -17,6 +17,8 @@ import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.react.NavigationReactNativeHost;
 import com.reactnativenavigation.react.ReactGateway;
 
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage; // Internacionalization
+
 public class MainApplication extends NavigationApplication {
   
   @Override
@@ -36,7 +38,9 @@ public class MainApplication extends NavigationApplication {
   }
 
   protected List<ReactPackage> getPackages() {
+      
       return Arrays.<ReactPackage>asList(
+            new RNI18nPackage()
       );
   }
 

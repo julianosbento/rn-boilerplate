@@ -6,12 +6,14 @@
  */
 import { StyleSheet } from 'react-native';
 
+import { Colors } from '../../utils/'
+
 export default StyleSheet.create({
   Container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: Colors.White,
   },
   Welcome: {
     fontSize: 20,
@@ -20,7 +22,7 @@ export default StyleSheet.create({
   },
   Instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: Colors.ToryBlue,
     marginBottom: 5,
   },
 });

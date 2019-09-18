@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { ActionCreators as ExampleActions } from '../../store/ducks/Example';
+import I18n from '../../../i18n';
 import Styles from './Styles';
 
 class Example extends Component {
@@ -27,7 +28,7 @@ class Example extends Component {
   render() {
     return (
       <View style={Styles.Container}>
-        <Button title={'Teste'} onPress={this.getExample} />
+        <Button title={I18n.t('test')} onPress={this.getExample} />
         <Text>{this.props.example.data}</Text>
       </View>
     );
