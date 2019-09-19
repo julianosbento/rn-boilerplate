@@ -1,0 +1,3 @@
+git_url("your_repository_url_app_certificates_here") # The repository url of your project app certificates
+
+type("appstore") # The default type, can be: appstore, adhoc, enterprise or development

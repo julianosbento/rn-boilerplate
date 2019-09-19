@@ -1,0 +1,45 @@
+fastlane_version "2.131.0"
+default_platform :android
+
+# ========================== ANDROID =========================
+# platform :android do
+#  desc "Deploy a new version to the Google Play Store"
+
+#  lane :development do
+#    gradle(
+#      task: "bundle",
+#      build_type: "Release",
+#      project_dir: "android/"
+#    )
+#    supply(
+#     track: "alpha",
+#      aab: "android/app/build/outputs/bundle/release/app.aab",
+#      skip_upload_apk: true
+#    )
+#  end
+# end
+
+# ====================================== IOS ===================================
+# platform :ios do
+
+#  ENV["GYM_PROJECT"] = "your_xcodeproj_path_here" # The xcodeproj path of your project (ex: ios/MyProjectName.xcodeproj)
+#  ENV["bundle-app"] = "your_bundle_identifier_here" # The bundle identifier of your app
+#  ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "120"
+#  ENV["schema"] = "your_app_name_here" # The name of your app name here
+
+#  desc "Compila e envia o app para a versao de teste"
+
+#  lane :development do
+#      match(
+#        type: "appstore",
+#        app_identifier: [ENV["bundle-app"]],
+#        git_url: "your_repository_url_app_certificates_of_apple_here" # The repository with app certificates of apple
+#      )
+#      build_app(scheme: ENV["schema"])
+#      upload_to_testflight(
+#        skip_submission: true,
+#        skip_waiting_for_build_processing: true,
+#        reject_build_waiting_for_review: true
+#      )
+#    end
+# end

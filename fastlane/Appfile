@@ -1,0 +1,10 @@
+# ======================== ANDROID ==========================
+# json_key_file "android/app/your-google-credentials.json" # The google credentials json
+# package_name "the_bundle_identifier_of_your_app" # The bundle identifier of your app
+
+# ========================== IOS =============================
+# app_identifier "the_bundle_identifier_of_your_app" # The bundle identifier of your app
+# apple_id "your_apple_email_address" # Your Apple email address
+
+# itc_team_id "your_itunes_connect_team_here" # iTunes Connect Team ID
+# team_id "your_developer_portal_team_id" # Developer Portal Team ID
