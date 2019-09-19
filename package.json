@@ -6,6 +6,7 @@
     "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
     "android:assets": "node node_modules/react-native/local-cli/cli.js bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
     "android:release": "(cd android && ./gradlew bundleRelease)",
+    "changelog": "auto-changelog && git add CHANGELOG.md",
     "lint": "eslint src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js",
     "lint:fix": "eslint --fix src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js",
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@babel/core": "7.6.0",
     "@babel/runtime": "7.6.0",
+    "auto-changelog": "^1.16.1",
     "babel-jest": "24.9.0",
     "eslint": "^6.0.1",
     "eslint-config-airbnb": "^17.1.0",
@@ -41,5 +43,12 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepchangelog.hbs",
+    "unreleased": false,
+    "commitLimit": 5,
+    "tagPrefix": "v"
   }
 }
