@@ -4,9 +4,9 @@
  * @version 1.0.0
  *
  */
-export const Types = {
-  SET: 'SET',
-  HIDE: 'HIDE',
+export const ErrorTypes = {
+  SET: 'error/SET',
+  HIDE: 'error/HIDE',
 };
 
 const initialState = {
@@ -16,19 +16,19 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case Types.SET:
+    case ErrorTypes.SET:
       return { ...state, visible: true, message: action.payload.message };
-    case Types.HIDE:
+    case ErrorTypes.HIDE:
       return { ...state, visible: false };
     default:
       return state;
   }
 };
 
-export const ActionCreators = {
-  setError: message => ({ type: Types.SET, payload: { message } }),
+export const ErrorActions = {
+  setError: message => ({ type: ErrorTypes.SET, payload: { message } }),
   hideError: () => ({
-    type: Types.HIDE,
+    type: ErrorTypes.HIDE,
   }),
 };
 

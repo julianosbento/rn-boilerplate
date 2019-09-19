@@ -10,7 +10,7 @@ import { Button, Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { ActionCreators as ExampleActions } from '../../store/ducks/Example';
+import { ExampleActions } from '../../store/ducks/Example';
 import I18n from '../../../i18n';
 import Styles from './Styles';
 

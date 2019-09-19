@@ -7,8 +7,8 @@
 import { call, put } from 'redux-saga/effects';
 import { ApiWrapper } from '../../services/api';
 
-import { ActionCreators as ExampleActions } from '../ducks/Example';
-import { ActionCreators as ErrorActions } from '../ducks/Error';
+import { ExampleActions } from '../ducks/Example';
+import { ErrorActions } from '../ducks/Error';
 import RouterMap from '../../services/api/RouterMap';
 
 export function* getExample() {

@@ -5,7 +5,7 @@
  *
  */
 import { all, takeLatest } from 'redux-saga/effects';
-import { Types as ExampleTypes } from '../ducks/Example';
+import { ExampleTypes } from '../ducks/Example';
 
 import { getExample } from './Example';
 

@@ -13,7 +13,7 @@ import Navigator from './Navigator';
 import store from '../store'
 
 import BarView from '../views/bar/Bar';
-import ExampleView from '../views/example/View';
+import ExampleView from '../views/example/Example';
 
 
 class Views {
