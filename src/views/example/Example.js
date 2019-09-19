@@ -14,17 +14,28 @@ import { ActionCreators as ExampleActions } from '../../store/ducks/Example';
 import I18n from '../../../i18n';
 import Styles from './Styles';
 
+/**
+ * @desc class example used to show a button and a label bellow
+ * @property {Object} example - example is a value to be show below the button test
+ */
 class Example extends Component {
   constructor(props) {
     super(props);
 
     this.getExample = this.getExample.bind(this);
   }
-
+  /**
+   * @desc call a reducer to request data example
+   * @return {void} - returns nothing
+   */
   getExample () {
     this.props.getExampleRequest();
   }
 
+  /**
+   * @desc render an element
+   * @return {Object} - react element
+   */
   render() {
     return (
       <View style={Styles.Container}>
@@ -35,6 +46,11 @@ class Example extends Component {
   }
 }
 
+/**
+ * propTypes
+ * @property {Object} - example object from Example reducer
+ * @property {Function} - getExampleRequest from action creator
+ */
 Example.propTypes = {
   example: PropTypes.object.isRequired,
   getExampleRequest: PropTypes.func.isRequired

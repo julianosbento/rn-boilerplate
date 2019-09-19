@@ -9,6 +9,9 @@ import { View, Image } from 'react-native';
 
 import Styles from './Styles';
 
+/**
+ * @desc bar of navigation
+ */
 class Bar extends Component {
   render() {
     return (
